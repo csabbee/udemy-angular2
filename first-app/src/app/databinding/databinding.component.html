@@ -1,0 +1,18 @@
+<h1>String Interpolation</h1>
+<p>
+  {{stringInterpolation}} | {{numberInterpolation}}
+</p>
+<hr>
+<h1>Property Binding</h1>
+<input type="text" [value]="stringInterpolation">
+<p [ngClass]="{'red-border': onTest()}">Is this styled</p>
+<p [ngStyle]="{color: 'blue'}">Is this styled</p>
+<h3>Custom Property Binding</h3>
+<fa-property-binding [result]="10"></fa-property-binding>
+<hr>
+<h3>Event Binding</h3>
+<fa-event-binding (clickable)="customHandler($event)"></fa-event-binding>
+<hr>
+<h3>Two Way Binding</h3>
+<fa-two-way-binding></fa-two-way-binding>
+
